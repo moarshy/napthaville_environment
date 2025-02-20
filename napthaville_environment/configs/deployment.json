@@ -9,8 +9,18 @@
             "maze_width": 140,
             "maze_height": 100,
             "sq_tile_size": 32,
-            "special_constraint":"",
-            "env_matrix_path": "data/matrix"
+            "special_constraint": "",
+            "env_matrix_path": "data/matrix",
+            "storage_config": {
+                "storage_type": "db",
+                "path": "napthaville_environment",
+                "storage_schema": {
+                    "napthaville_environment": {
+                        "type": {"type": "text", "primary_key": true},
+                        "data": {"type": "jsonb"}
+                    }
+                }
+            }
         }
     }
 ]
