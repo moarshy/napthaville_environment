@@ -1,0 +1,16 @@
+[
+    {
+        "name": "napthaville_environment_1",
+        "module": {"name": "napthaville_environment"},
+        "node": {"ip": "localhost"},
+        "config": {
+            "config_name": "napthaville_config",
+            "world_name": "Napthaville",
+            "maze_width": 140,
+            "maze_height": 100,
+            "sq_tile_size": 32,
+            "special_constraint":"",
+            "env_matrix_path": "data/matrix"
+        }
+    }
+]

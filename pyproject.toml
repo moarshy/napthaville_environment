@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "napthaville_environment"
+version = "0.1.0"
+description = "A simple environment for napthaville social simulation" 
+authors = ["Mohamed Arshath <marshath@gmail.com>"]
+readme = "README.md"
+packages = [
+    {include = "napthaville_environment", from="."}
+]
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+naptha-sdk = {git = "https://github.com/NapthaAI/naptha-sdk.git"}
+pydantic = "^2.10.6"
+numpy = "^2.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
